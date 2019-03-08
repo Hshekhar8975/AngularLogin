@@ -1,0 +1,59 @@
+<table class="tg" *ngIf="data">
+  <tr>
+    <th class="tg-0lax">index</th>
+    <th class="tg-0lax">_id</th>
+    <th class="tg-0lax">alias</th>
+    <th class="tg-0lax">aliasId</th>
+    <th class="tg-0lax">email</th>
+    <th class="tg-0lax">userId</th>
+    <th class="tg-0lax">mailCount</th>
+    <th class="tg-0lax">refferedUrl</th>
+    <th class="tg-0lax">status</th>
+    <th class="tg-0lax">created</th>
+  </tr>
+  <tr *ngFor="let alias of data; let i = index; let isOdd = odd; let isEven = even">
+    <td [class.tg-0lax]="isOdd" [class.tg-hmp3]="isEven">{{i+1}}</td>
+    <td [class.tg-0lax]="isOdd" [class.tg-hmp3]="isEven">{{alias._id}}</td>
+    <td [class.tg-0lax]="isOdd" [class.tg-hmp3]="isEven">{{alias.alias}}</td>
+    <td [class.tg-0lax]="isOdd" [class.tg-hmp3]="isEven">{{alias.aliasId}}</td>
+    <td [class.tg-0lax]="isOdd" [class.tg-hmp3]="isEven">{{alias.email}}</td>
+    <td [class.tg-0lax]="isOdd" [class.tg-hmp3]="isEven">{{alias.userId}}</td>
+    <td [class.tg-0lax]="isOdd" [class.tg-hmp3]="isEven">{{alias.mailCount}}</td>
+    <td [class.tg-0lax]="isOdd" [class.tg-hmp3]="isEven">{{alias.refferedUrl}}</td>
+    <td [class.tg-0lax]="isOdd" [class.tg-hmp3]="isEven">{{alias.status}}</td>
+    <td [class.tg-0lax]="isOdd" [class.tg-hmp3]="isEven">{{alias.created}}</td>
+  </tr>
+</table>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<div class="container">
+  <table class="table table-striped" *ngIf="data">
+    <thead>
+      <tr>
+        <th>index</th>
+        <th>_id</th>
+        <th>status</th>
+        <th>userId</th>
+        <th>aliasId</th>
+        <th>alias</th>
+        <th>email</th>
+        <th>mailCount</th>
+        <th>refferedUrl</th>
+        <th>created</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let alias of data; let i = index">
+        <td>{{i+1}}</td>
+        <td>{{alias._id}}</td>
+        <td>{{alias.status}}</td>
+        <td>{{alias.userId}}</td>
+        <td>{{alias.aliasId}}</td>
+        <td>{{alias.alias}}</td>
+        <td>{{alias.email}}</td>
+        <td>{{alias.mailCount}}</td>
+        <td>{{alias.refferedUrl}}</td>
+        <td>{{alias.created}}</td>
+      </tr>
+    </tbody>
+  </table> 
+</div> -->
